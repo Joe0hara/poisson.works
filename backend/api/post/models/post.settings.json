@@ -36,8 +36,18 @@
       "type": "date"
     },
     "categories": {
-      "via": "posts",
-      "collection": "category"
+      "collection": "category",
+      "via": "posts"
+    },
+    "tags": {
+      "collection": "tag",
+      "via": "post"
+    },
+    "selected": {
+      "type": "boolean"
+    },
+    "order": {
+      "type": "integer"
     }
   }
 }
