@@ -25,3 +25,15 @@ yarn develop
 ```
 
 Strapi server is running here => [http://localhost:1337](http://localhost:1337)
+
+### Deploy the frontend
+
+**Netflify**
+
+To deploy this Strapi instance you'll need:
+
+- [A Netilfy account](https://app.netlify.com/signup) for free
+
+Once you have created your account you can deploy your instance by clicking on this button.
+
+[![Deploy](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Joe0hara/poisson.work)
