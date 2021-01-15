@@ -18,5 +18,9 @@
     "nuxt-fontawesome": "^0.4.0",
     "sass-loader": "^9.0.2"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "main": "index.js",
+  "repository": "https://github.com/Joe0hara/poisson.work.git",
+  "author": "joe0hara <joe.spyair@gmail.com>",
+  "license": "MIT"
 }
