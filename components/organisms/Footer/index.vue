@@ -1,13 +1,13 @@
 <template>
 	<footer>
-		<div>mail : joe.spyair@gmail.com</div>
-		<div class="sns">
+		<!-- <div>mail : joe.spyair@gmail.com</div> -->
+		<!-- <div class="sns">
 			<ul>
 				<li>Twitter</li>
 				<li>facebook</li>
 				<li>instagram</li>
 			</ul>
-		</div>
+		</div> -->
 	</footer>
 </template>
 

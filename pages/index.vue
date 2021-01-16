@@ -2,7 +2,9 @@
 	<div class="container">
 		<Header />
 
-		<Footer />
+
+
+		<!-- <Footer /> -->
 	</div>
 </template>
 
