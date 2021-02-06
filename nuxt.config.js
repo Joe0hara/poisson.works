@@ -1,3 +1,5 @@
+require('dotenv').config()
+const {API} = process.env;
 
 export default {
   /*
@@ -6,7 +8,7 @@ export default {
   */
   mode: 'universal',
   env: {
-	  strapiBaseUri: process.env.API_URL || "http://localhost:1337"
+    API
   },
   /*
   ** Nuxt target
@@ -48,14 +50,15 @@ export default {
   ** Nuxt.js dev-modules
   */
   buildModules: [
+    '@nuxtjs/dotenv'
   ],
   /*
   ** Nuxt.js modules
   */
   modules: [
-	'@nuxtjs/axios',
-	'@nuxtjs/markdownit',
-	'@nuxtjs/style-resources',
+    '@nuxtjs/axios',
+    '@nuxtjs/markdownit',
+    '@nuxtjs/style-resources',
   ],
 
   /*
@@ -63,7 +66,7 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
-	  baseURL: process.env.strapiBaseUri,
+	  // baseURL: process.env.strapiBaseUri,
   },
   markdownit: {
     injected: true
