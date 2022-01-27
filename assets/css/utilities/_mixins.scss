@@ -1,0 +1,40 @@
+$device_size: (
+    xs: 0,
+    sm: 576,
+    md: 768,
+    lg: 992,
+    xl: 1200
+);
+$font_size: (
+    xs: 14px,
+    sm: 14px,
+    md: 16px,
+    lg: 16px,
+    xl: 16px
+);
+
+$sp-max: calc(map-get($device_size, 'sm') - 1)px;
+$tb-min: map-get($device_size, 'md') + px;
+$tb-max: calc(map-get($device_size, 'lg') - 1)px;
+$pc-min: map-get($device_size, 'lg') + px;
+
+/* PC */
+@mixin display_pc {
+  @media (min-width: $pc-min) {
+    @content;
+  }
+}
+
+/* タブレット */
+@mixin display_tab {
+  @media (min-width: $tb-min) and (max-width: $tb-max) {
+    @content;
+  }
+}
+
+/* スマホ */
+@mixin display_sp {
+  @media (max-width: $sp-max) {
+    @content;
+  }
+}

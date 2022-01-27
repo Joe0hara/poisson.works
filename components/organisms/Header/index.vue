@@ -1,41 +1,70 @@
 <template>
 	<header>
-		<div class="header-left"></div>
-		<div class="header-right">
-			<HamburgerMenu  @click='HMBtnClick' />
-		</div>
-		<DropdownMenu :isOpen="isMenuOpen" />
-	</header>
+		<v-app-bar app dark>
+
+			<v-app-bar-nav-icon v-on:click="drawer = !drawer"></v-app-bar-nav-icon>
+
+			<v-toolbar-title>poisson.work</v-toolbar-title>
+
+			<v-tabs right>
+				<v-tab v-for="(menu, index) in menuList" :key="index" :to=menu.link>
+					{{ menu.name }}
+				</v-tab>
+			</v-tabs>
+		</v-app-bar>
+
+		<v-navigation-drawer v-model="drawer" fixed temporary>
+			<v-list nav dense>
+				<v-list-item-group>
+					<v-list-item v-for="(menu, index) in menuList" :key="index" :to=menu.link>
+						<v-list-item-title>{{ menu.name }}</v-list-item-title>
+					</v-list-item>
+				</v-list-item-group>
+			</v-list>
+		</v-navigation-drawer>
+
+  </header>
 </template>
 
 <script>
+
 export default {
+
 	data() {
 		return {
-			isMenuOpen: false,
+			drawer: false,
+			menuList: [{
+				name: 'HOME',
+				link: '/'
+			},
+			{
+				name: 'ABOUT',
+				link: '/about'
+			},
+			]
 		}
 	},
 	methods: {
-		HMBtnClick: function(isOpen) {
-			this.isMenuOpen = isOpen;
-		}
+
 	}
 }
 </script>
 
-<style lang="scss">
-header{
-	width: 100%;
-	height: 75px;
-	background-color: #118077;
-	.header-left{
-		height: 100%;
-		float: left;
-	}
-	.header-right{
-		height: 100%;
-		float: right;
-	}
+<style lang="scss" scoped>
+.v-toolbar__title {
+  overflow: visible !important;
+  margin-right: 50px !important;
+}
+.v-app-bar__nav-icon {
+  @include display_pc {
+    display: none !important;
+  }
+}
+.v-tabs {
+  display: none;
 
+  @include display_pc {
+    display: block !important;
+  }
 }
 </style>

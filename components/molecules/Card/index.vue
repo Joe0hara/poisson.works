@@ -12,6 +12,7 @@
     </article>
   </nuxt-link>
 </template>
+
 <script>
 export default {
   props: {

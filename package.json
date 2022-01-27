@@ -14,13 +14,16 @@
     "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/markdownit": "^1.2.9",
     "@nuxtjs/style-resources": "^1.0.0",
-    "contentful": "^8.1.7",
-    "node-sass": "^4.14.1",
+    "contentful": "^9.1.6",
     "nuxt": "^2.13.0",
     "nuxt-fontawesome": "^0.4.0",
     "sass-loader": "^9.0.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@contentful/rich-text-html-renderer": "^15.11.1",
+    "@nuxtjs/vuetify": "^1.12.3",
+    "sass": "^1.49.0"
+  },
   "main": "index.js",
   "repository": "https://github.com/Joe0hara/poisson.work.git",
   "author": "joe0hara <joe.spyair@gmail.com>",

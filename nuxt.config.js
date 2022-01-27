@@ -50,14 +50,14 @@ export default {
   ** Nuxt.js dev-modules
   */
   buildModules: [
-    '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv',
+    '@nuxtjs/vuetify',
   ],
   /*
   ** Nuxt.js modules
   */
   modules: [
     '@nuxtjs/axios',
-    '@nuxtjs/markdownit',
     '@nuxtjs/style-resources',
   ],
 
@@ -65,12 +65,7 @@ export default {
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
   */
-  axios: {
-	  // baseURL: process.env.strapiBaseUri,
-  },
-  markdownit: {
-    injected: true
-  },
+
   styleResources: {
 	  scss: [
 		'~/assets/css/_style.scss'

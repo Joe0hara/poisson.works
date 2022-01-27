@@ -30,3 +30,7 @@ $ yarn generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+### ref
+
+[【Contentful編】モダンな感じのSPAブログを自作する](https://qiita.com/hitsuji-haneta/items/6be4745b9bd6b098843f)
