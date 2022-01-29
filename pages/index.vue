@@ -5,13 +5,17 @@
 			<main>
 				<RechtextRender :richtext-data="page.fields.body" />
 
-				<!-- <Card
+				<Card
 					v-for="(post, i) in posts"
 					:key="i"
 					:title="post.fields.title"
+					:slug="post.fields.slug"
 					:id="post.sys.id"
 					:date="post.sys.updatedAt"
-				/> -->
+					:thumbnail_url="post.fields.thumbnail.fields.file.url"
+					:to="post"
+				/>
+
 			</main>
 
 			<Footer/>
@@ -38,19 +42,19 @@ export default {
 		Card,
   },
 
-	asyncData({env}){
+	asyncData({}){
       return Promise.all([
         client.getEntries({
 					content_type: "page",
 					"fields.slug": "home"
 				}),
         client.getEntries({
-          content_type: env.CTF_BLOG_POST_TYPE_ID,
+          content_type: 'post',
         }),
       ])
-        .then(([entries, posts]) => {
+        .then(([page, posts]) => {
           return {
-            page: entries.items[0],
+            page: page.items[0],
             posts: posts.items,
           };
         })

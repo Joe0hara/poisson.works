@@ -24,9 +24,9 @@ export default {
 
 <style lang="scss">
 .richtext_container{
-	width: 80%;
-	min-width: 300px;
-	max-width: 750px;
+	width: 95%;
+	// min-width: 300px;
+	// max-width: 750px;
 	margin: 0 auto;
 	img{
 		max-width: 100%;

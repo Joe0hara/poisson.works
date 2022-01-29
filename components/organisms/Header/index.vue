@@ -1,6 +1,6 @@
 <template>
 	<header>
-		<v-app-bar app dark>
+		<v-app-bar dark flat>
 
 			<v-app-bar-nav-icon v-on:click="drawer = !drawer"></v-app-bar-nav-icon>
 
@@ -8,7 +8,7 @@
 
 			<v-tabs right>
 				<v-tab v-for="(menu, index) in menuList" :key="index" :to=menu.link>
-					{{ menu.name }}
+					{{ menu.title }}
 				</v-tab>
 			</v-tabs>
 		</v-app-bar>
@@ -17,7 +17,7 @@
 			<v-list nav dense>
 				<v-list-item-group>
 					<v-list-item v-for="(menu, index) in menuList" :key="index" :to=menu.link>
-						<v-list-item-title>{{ menu.name }}</v-list-item-title>
+						<v-list-item-title>{{ menu.title }}</v-list-item-title>
 					</v-list-item>
 				</v-list-item-group>
 			</v-list>
@@ -27,26 +27,33 @@
 </template>
 
 <script>
+import {createClient} from '~/plugins/contentful.js'
+const client = createClient()
 
 export default {
-
 	data() {
 		return {
 			drawer: false,
-			menuList: [{
-				name: 'HOME',
-				link: '/'
-			},
-			{
-				name: 'ABOUT',
-				link: '/about'
-			},
-			]
+			menuList: [],
 		}
 	},
-	methods: {
-
-	}
+	async fetch (){
+		const pagelist = await client.getEntries({
+			content_type: "page",
+			order: "sys.createdAt",
+		})
+		const menuList = []
+		pagelist.items.forEach(page => {
+			const menu = new Object()
+			menu.title = page.fields.title
+			menu.link = '/' + page.fields.slug
+			if (page.fields.slug == 'home') {
+				menu.link = '/'
+			}
+			menuList.push(menu)
+		});
+		this.menuList = menuList
+	},
 }
 </script>
 
