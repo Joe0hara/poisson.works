@@ -2,12 +2,13 @@
 	<header>
 		<v-app-bar dark flat>
 
-			<v-app-bar-nav-icon v-on:click="drawer = !drawer"></v-app-bar-nav-icon>
+			<v-app-bar-nav-icon v-on:click="drawer = !drawer" class="d-md-none"></v-app-bar-nav-icon>
 
 			<v-toolbar-title>poisson.work</v-toolbar-title>
 
 			<v-tabs right>
-				<v-tab v-for="(menu, index) in menuList" :key="index" :to=menu.link>
+				<v-tabs-slider color="rgba(0,0,0,0)"></v-tabs-slider>
+				<v-tab class="d-none d-md-flex" v-for="(menu, index) in menuList" :key="index" :to=menu.link>
 					{{ menu.title }}
 				</v-tab>
 			</v-tabs>
@@ -62,16 +63,16 @@ export default {
   overflow: visible !important;
   margin-right: 50px !important;
 }
-.v-app-bar__nav-icon {
-  @include display_pc {
-    display: none !important;
-  }
-}
-.v-tabs {
-  display: none;
+// .v-app-bar__nav-icon {
+//   @include display_pc {
+//     display: none !important;
+//   }
+// }
+// .v-tabs {
+//   display: none;
 
-  @include display_pc {
-    display: block !important;
-  }
-}
+//   @include display_pc {
+//     display: block !important;
+//   }
+// }
 </style>

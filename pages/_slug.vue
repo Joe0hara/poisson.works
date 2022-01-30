@@ -3,6 +3,7 @@
 			<Header/>
 
 			<main>
+				<h1>{{slug}}</h1>
 				<RechtextRender :richtext-data="page.fields.body" />
 
 				<Card :posts="posts"/>
@@ -37,17 +38,19 @@ export default {
       return Promise.all([
         client.getEntries({
 					content_type: "page",
-					"fields.slug": "home"
+					"fields.slug": params.slug
 				}),
-        client.getEntries({
+				client.getEntries({
           content_type: 'post',
+					"fields.category.sys.contentType.sys.id": "category",
+					"fields.category.fields.slug": params.slug,
         }),
       ])
         .then(([page, posts]) => {
           return {
             page: page.items[0],
-            posts: posts.items,
-						slug: params
+						posts: posts.items,
+						slug: params.slug,
           };
         })
         .catch(console.error);
