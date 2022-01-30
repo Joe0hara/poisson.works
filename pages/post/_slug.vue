@@ -37,6 +37,7 @@ export default {
         client.getEntries({
 					content_type: "post",
 					"fields.slug": params.slug,
+          "fields.sercret[ne]" : true,
 				}),
       ])
         .then(([entries]) => {

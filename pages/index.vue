@@ -41,6 +41,7 @@ export default {
 				}),
         client.getEntries({
           content_type: 'post',
+          "fields.sercret[ne]" : true,
         }),
       ])
         .then(([page, posts]) => {
