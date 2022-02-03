@@ -3,14 +3,6 @@ body{
     color: $text_color;
     background: #ffffff;
 
-	font-family:'Noto Sans JP', sans-serif;
-
-    font-size: map-get($font_size, 'xs');
-    @media (min-width : map-get($device_size, 'sm')) { font-size: map-get($font_size, 'sm'); }
-    @media (min-width : map-get($device_size, 'md')) { font-size: map-get($font_size, 'md'); }
-    @media (min-width : map-get($device_size, 'lg')) { font-size: map-get($font_size, 'lg'); }
-    @media (min-width : map-get($device_size, 'xl')) { font-size: map-get($font_size, 'xl'); }
-
     @media screen and (max-width: 768px) {
         .pc{ display: none; }
         .sp{ display: block; }
@@ -21,14 +13,25 @@ body{
     }
 }
 
-main{
-    margin: 0 auto;
-    margin-top: 50px;
-    width: 90%;
-    max-width: 1500px;
-    line-height: 1.5;
-}
 
+
+
+.v-application{
+    main{
+        margin: 0 auto;
+        margin-top: 50px;
+        width: 90%;
+        max-width: 1500px;
+        line-height: 1.5;
+    }
+    font-family:'Noto Sans JP', sans-serif;
+    font-weight: 600;
+
+    font-size: map-get($font_size, 'xs');
+    @media (min-width : map-get($device_size, 'sm')) { font-size: map-get($font_size, 'sm'); }
+    @media (min-width : map-get($device_size, 'md')) { font-size: map-get($font_size, 'md'); }
+    @media (min-width : map-get($device_size, 'lg')) { font-size: map-get($font_size, 'lg'); }
+    @media (min-width : map-get($device_size, 'xl')) { font-size: map-get($font_size, 'xl'); }
 // https://github.com/AdamMarsden/simple-typography
 
 // // Font Family
@@ -105,9 +108,9 @@ main{
 //     font-size: $header-size / 1.7;
 //     margin-bottom: $header-margin / 1.7;
 // }
-h4{
-    margin: 1em auto 0.25em;
-}
+// h4{
+//     margin: 1em auto 0.25em;
+// }
 
 // h5 {
 //     font-size: $header-size / 1.8;
@@ -133,10 +136,10 @@ h4{
 //     }
 // }
 
-p{
-    margin: 0;
-    width: 100%;
-}
+// p{
+//     margin: 0;
+//     width: 100%;
+// }
 
 
 
@@ -299,4 +302,5 @@ img {
 ::selection{
     background-color: $border_color;
     color: $text_color;
+}
 }

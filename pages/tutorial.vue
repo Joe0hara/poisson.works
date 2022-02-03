@@ -3,14 +3,11 @@
 			<Header/>
 
 			<main>
-				<h1>{{post.fields.title}}</h1>
-				<div class="detail">
-					<div>{{post.fields.date}}</div>
-					<div>{{post.fields.venue}}</div>
-				</div>
-				<img class="thimbnail" :src="post.fields.thumbnail.fields.file.url" />
-				<RechtextRender :richtext-data="post.fields.body" />
-				<button @click="$router.go(-1)">Back</button>
+				<h1>{{slug}}</h1>
+				<RechtextRender :richtext-data="page.fields.body" />
+
+				<Card :posts="posts"/>
+
 			</main>
 
 			<Footer/>
@@ -40,14 +37,21 @@ export default {
 	asyncData({params}){
       return Promise.all([
         client.getEntries({
-					content_type: "post",
-					"fields.slug": params.slug,
-          "fields.sercret[ne]" : true,
+					content_type: "page",
+					"fields.slug": "tutorial"
 				}),
+				client.getEntries({
+          content_type: 'post',
+					"fields.category.sys.contentType.sys.id": "category",
+					"fields.category.fields.slug": "tutorial",
+					"fields.sercret[ne]" : true,
+        }),
       ])
-        .then(([entries]) => {
+        .then(([page, posts]) => {
           return {
-            post: entries.items[0],
+            page: page.items[0],
+						posts: posts.items,
+						slug: "tutorial"
           };
         })
         .catch(console.error);
@@ -56,18 +60,5 @@ export default {
 </script>
 
 <style>
-h1{
-	margin-bottom: 25px;
-}
-.thimbnail{
-	margin-bottom: 25px;
-}
-button{
-	text-decoration: underline;
-	font-weight: bolder;
-}
-.detail{
-	text-align: right;
-	margin-bottom: 10px;
-}
+
 </style>
