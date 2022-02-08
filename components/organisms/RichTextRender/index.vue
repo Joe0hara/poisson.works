@@ -13,22 +13,25 @@ export default {
 	computed:{
 		changed_page_content : function () {
 			const options = {
+
         renderNode: {
           [BLOCKS.EMBEDDED_ASSET]: ({
             data: {
               target: { fields }
             }
           }) => {
-							console.log(fields.file)
-							const img_ext = ['png', 'jpg', 'gif']
-							if (img_ext.includes(fields.file.url.slice(-3))) {
-								return `<img src="${fields.file.url}"/>`
-							}
-							else{
-								return `<a href="${fields.file.url}">${fields.file.fileName}</a>`
-							}
+						const img_ext = ['png', 'jpg', 'gif']
+						if (img_ext.includes(fields.file.url.slice(-3))) {
+							return `<img src="${fields.file.url}"/>`
 						}
-        }
+						else{
+							return `<a href="${fields.file.url}">${fields.file.fileName}</a>`
+						}
+					},
+					[BLOCKS.PARAGRAPH]: (node, next) =>{
+						return `<p>${next(node.content).replaceAll('\n', '<br />')}</p>`
+					}
+        },
       }
 			return documentToHtmlString(this.richtextData, options)
 		}
