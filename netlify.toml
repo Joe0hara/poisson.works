@@ -2,6 +2,7 @@
   base = "/"
   publish = "dist"
   command = "nuxt build && nuxt generate"
+  baseurl = "https://poisson.work"
 
 [template.environment]
   VUE_APP_STRAPI_API_URL = "API_URL"
