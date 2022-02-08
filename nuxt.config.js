@@ -1,5 +1,5 @@
 require('dotenv').config()
-const {API} = process.env;
+const {SPACE_ID, ACCESS_TOKEN} = process.env;
 
 export default {
   /*
@@ -7,14 +7,14 @@ export default {
   ** See https://nuxtjs.org/api/configuration-mode
   */
   env: {
-    API
+    SPACE_ID, ACCESS_TOKEN
   },
   /*
   ** Nuxt target
   ** See https://nuxtjs.org/api/configuration-target
   */
-  // target: 'static',
-  target: 'serverless',
+  target: 'static',
+  // target: 'serverless',
   /*
   ** Headers of the page
   ** See https://nuxtjs.org/api/configuration-head
