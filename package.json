@@ -18,7 +18,7 @@
     "nuxt": "^2.13.0",
     "nuxt-fontawesome": "^0.4.0",
     "prismjs": "^1.26.0",
-    "sass-loader": "^9.0.2"
+    "sass-loader": "^10.1.1"
   },
   "devDependencies": {
     "@contentful/rich-text-html-renderer": "^15.11.1",
