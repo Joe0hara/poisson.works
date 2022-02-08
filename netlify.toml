@@ -1,7 +1,7 @@
 [build]
   base = "/"
   publish = "dist/"
-  command = "nuxt build"
+  command = "npm run generate"
 
 [template.environment]
   VUE_APP_STRAPI_API_URL = "API_URL"
