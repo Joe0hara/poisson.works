@@ -18,12 +18,13 @@
     "nuxt": "^2.13.0",
     "nuxt-fontawesome": "^0.4.0",
     "prismjs": "^1.26.0",
-    "sass-loader": "^10.1.1"
-  },
-  "devDependencies": {
+    "sass-loader": "^10.1.1",
     "@contentful/rich-text-html-renderer": "^15.11.1",
     "@nuxtjs/vuetify": "^1.12.3",
     "sass": "^1.49.0"
+  },
+  "devDependencies": {
+
   },
   "main": "index.js",
   "repository": "https://github.com/Joe0hara/poisson.work.git",

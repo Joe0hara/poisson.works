@@ -1,5 +1,5 @@
 require('dotenv').config()
-const {SPACE_ID, ACCESS_TOKEN} = process.env;
+const {CTF_SPACE_ID, CTF_CDA_ACCESS_TOKEN} = process.env;
 
 export default {
   /*
@@ -7,7 +7,7 @@ export default {
   ** See https://nuxtjs.org/api/configuration-mode
   */
   env: {
-    SPACE_ID, ACCESS_TOKEN
+    CTF_SPACE_ID, CTF_CDA_ACCESS_TOKEN
   },
   /*
   ** Nuxt target
