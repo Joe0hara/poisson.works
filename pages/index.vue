@@ -4,12 +4,16 @@
 
 			<main>
 				<RechtextRender :richtext-data="page.fields.body" />
+          <h1>work</h1>
+          <Card :posts=work />
 
-				<Card :posts="posts"/>
+          <h1>prototype</h1>
+          <Card :posts=work />
 
-			</main>
-
-			<Footer/>
+          <h1>tutorial</h1>
+          <Card :posts=work />
+			  <Footer/>
+      </main>
 
 	</v-app>
 </template>
@@ -34,24 +38,43 @@ export default {
   },
 
 	asyncData({params}){
-      return Promise.all([
-        client.getEntries({
-					content_type: "page",
-					"fields.slug": "home"
-				}),
-        client.getEntries({
-          content_type: 'post',
-          "fields.sercret[ne]" : true,
-        }),
-      ])
-        .then(([page, posts]) => {
-          return {
-            page: page.items[0],
-            posts: posts.items,
-						slug: params
-          };
-        })
-        .catch(console.error);
+    return Promise.all([
+      client.getEntries({
+        content_type: "page",
+        "fields.slug": "home"
+      }),
+      client.getEntries({
+        content_type: 'post',
+        "fields.category.sys.contentType.sys.id": "category",
+        "fields.category.fields.slug": 'work',
+        limit: 4,
+        "fields.sercret[ne]" : true,
+      }),
+      client.getEntries({
+        content_type: 'post',
+        "fields.category.sys.contentType.sys.id": "category",
+        "fields.category.fields.slug": 'prototype',
+        limit: 4,
+        "fields.sercret[ne]" : true,
+      }),
+      client.getEntries({
+        content_type: 'post',
+        "fields.category.sys.contentType.sys.id": "category",
+        "fields.category.fields.slug": 'tutorial',
+        limit: 4,
+        "fields.sercret[ne]" : true,
+      }),
+    ])
+      .then(([page, work, prototype, tutorial]) => {
+        return {
+          page: page.items[0],
+          work: work.items,
+          prototype: prototype.items,
+          tutorial: tutorial.items,
+          slug: params
+        };
+      })
+      .catch(console.error);
     },
 }
 </script>
