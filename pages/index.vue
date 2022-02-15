@@ -8,10 +8,10 @@
           <Card :posts=work />
 
           <h1>prototype</h1>
-          <Card :posts=work />
+          <Card :posts=prototype />
 
           <h1>tutorial</h1>
-          <Card :posts=work />
+          <Card :posts=tutorial />
 			  <Footer/>
       </main>
 
