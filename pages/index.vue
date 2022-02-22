@@ -4,13 +4,13 @@
 
 			<main>
 				<RechtextRender :richtext-data="page.fields.body" />
-          <h1>work</h1>
+          <h1><a href="/work">work</a></h1>
           <Card :posts=work />
 
-          <h1>prototype</h1>
+          <h1><a href="/prototype">prototype</a></h1>
           <Card :posts=prototype />
 
-          <h1>tutorial</h1>
+          <h1><a href="/tutorial">tutorial</a></h1>
           <Card :posts=tutorial />
 			  <Footer/>
       </main>

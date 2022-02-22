@@ -22,7 +22,7 @@
                   :src="post.fields.thumbnail.fields.file.url"
                   :aspect-ratio="16/9"
                   class="white--text align-end grey darken-4"
-                  gradient="to bottom, rgba(0,0,0, 0.2), rgba(0,0,0,1.0)"
+                  gradient="to bottom, rgba(0,0,0, 0.0), rgba(0,0,0, 0.0) 80%, rgba(0,0,0,1.0) 100%"
                   contain
                 >
                   <v-card-title v-text="post.fields.title"></v-card-title>
@@ -45,3 +45,8 @@ export default {
   }
 }
 </script>
+<style scoped>
+  a{
+    text-decoration: none !important;
+  }
+</style>
