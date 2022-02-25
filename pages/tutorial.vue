@@ -44,10 +44,12 @@ export default {
           content_type: 'post',
 					"fields.category.sys.contentType.sys.id": "category",
 					"fields.category.fields.slug": "tutorial",
+					order: '-fields.date',
 					"fields.sercret[ne]" : true,
         }),
       ])
         .then(([page, posts]) => {
+					console.log(posts.items)
           return {
             page: page.items[0],
 						posts: posts.items,

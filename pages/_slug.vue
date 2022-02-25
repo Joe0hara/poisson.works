@@ -44,6 +44,7 @@ export default {
           content_type: 'post',
 					"fields.category.sys.contentType.sys.id": "category",
 					"fields.category.fields.slug": params.slug,
+					order: '-fields.date',
 					"fields.sercret[ne]" : true,
         }),
       ])
