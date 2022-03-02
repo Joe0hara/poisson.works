@@ -155,7 +155,7 @@ body{
 
 a{
     text-decoration: underline;
-    color: $text_color;
+    color: $text_color !important;
     font-weight: bolder;
 }
 
