@@ -82,6 +82,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+a{
+  color: #202020 !important;
+}
 </style>
