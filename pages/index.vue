@@ -7,11 +7,12 @@
           <h1><a href="/work">work</a></h1>
           <Card :posts=work />
 
+          <h1><a href="/tutorial">tutorial</a></h1>
+          <Card :posts=tutorial />
+
           <h1><a href="/prototype">prototype</a></h1>
           <Card :posts=prototype />
 
-          <h1><a href="/tutorial">tutorial</a></h1>
-          <Card :posts=tutorial />
 			  <Footer/>
       </main>
 
