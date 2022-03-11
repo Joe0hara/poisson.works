@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import { BLOCKS } from '@contentful/rich-text-types'
+import { BLOCKS, INLINES } from '@contentful/rich-text-types'
 import { documentToHtmlString } from '@contentful/rich-text-html-renderer'
 
 export default {
@@ -13,25 +13,33 @@ export default {
 	computed:{
 		changed_page_content : function () {
 			const options = {
-
         renderNode: {
           [BLOCKS.EMBEDDED_ASSET]: ({
-            data: {
-              target: { fields }
+            data: { target: { fields }
             }
-          }) => {
-						const img_ext = ['png', 'jpg', 'gif']
-						if (img_ext.includes(fields.file.url.slice(-3))) {
-							return `<img src="${fields.file.url}"/>`
+					}) => {
+							const img_ext = ['png', 'jpg', 'gif']
+							if (img_ext.includes(fields.file.url.slice(-3))) {
+									return `<img src="${fields.file.url}"/>`
+							}
+							else{
+									return `<a href="${fields.file.url}">${fields.file.fileName}</a>`
+							}
+					},
+					[INLINES.HYPERLINK]: (node, children) => {
+						if (
+							node.data.uri.startsWith('/') ||
+							node.data.uri.startsWith('https://poisson.works')
+						) {
+							return `<Link to=${node.data.uri}>${node.content[0].value}</Link>`
 						}
-						else{
-							return `<a href="${fields.file.url}">${fields.file.fileName}</a>`
-						}
+						return `<a href=${node.data.uri} target="_blank" rel="noopener noreferrer">${node.content[0].value}</a>`
 					},
 					[BLOCKS.PARAGRAPH]: (node, next) =>{
 						return `<p>${next(node.content).replaceAll('\n', '<br />')}</p>`
-					}
-        },
+					},
+
+				},
       }
 			return documentToHtmlString(this.richtextData, options)
 		}

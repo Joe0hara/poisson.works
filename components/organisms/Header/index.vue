@@ -4,7 +4,7 @@
 
 			<v-app-bar-nav-icon v-on:click="drawer = !drawer" class="d-md-none"></v-app-bar-nav-icon>
 
-			<v-toolbar-title>poisson.work</v-toolbar-title>
+			<v-toolbar-title><a href="/">poisson.work</a></v-toolbar-title>
 
 			<v-tabs right>
 				<v-tabs-slider color="rgba(0,0,0,0)"></v-tabs-slider>
@@ -59,11 +59,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.v-toolbar__title {
-  overflow: visible !important;
-  margin-right: 50px !important;
-}
-.active_tab{
-	color: rgb(255,255,255) !important;
-}
+	.v-toolbar__title {
+		overflow: visible !important;
+		margin-right: 50px !important;
+		a{
+			color: #EEEEEE !important;
+			text-decoration: none !important;
+		}
+	}
+	.active_tab{
+		color: rgb(255,255,255) !important;
+	}
 </style>
