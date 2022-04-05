@@ -4,10 +4,12 @@
 
 			<main>
 				<h1>{{post.fields.title}}</h1>
-				<div class="detail">
-					<div>{{post.fields.date}}</div>
-					<div>{{post.fields.venue}}</div>
-				</div>
+
+				<table class="detail">
+					<tr><th>date</th><th>{{post.fields.date}}</th></tr>
+					<tr><th>venue</th><th>{{post.fields.venue}}</th></tr>
+					<tr><th>my role</th><th>{{post.fields.role}}</th></tr>
+				</table>
 				<img class="thimbnail" :src="post.fields.thumbnail.fields.file.url" />
 				<RechtextRender :richtext-data="post.fields.body" />
 				<button @click="$router.go(-1)">Back</button>
@@ -55,7 +57,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 h1{
 	margin-bottom: 25px;
 }
@@ -67,7 +69,14 @@ button{
 	font-weight: bolder;
 }
 .detail{
-	text-align: right;
+	/* text-align: right; */
 	margin-bottom: 10px;
+
+	th{
+		text-align: left;
+	}
+	th:nth-of-type(2){
+		padding-left: 20px;
+	}
 }
 </style>
