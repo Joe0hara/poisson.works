@@ -6,9 +6,9 @@
 				<h1>{{post.fields.title}}</h1>
 
 				<table class="detail">
-					<tr><th>date</th><th>{{post.fields.date}}</th></tr>
-					<tr><th>venue</th><th>{{post.fields.venue}}</th></tr>
-					<tr><th>my role</th><th>{{post.fields.role}}</th></tr>
+					<tr v-if="post.fields.date"><th>date</th><th>{{post.fields.date}}</th></tr>
+					<tr v-if="post.fields.venue"><th>venue</th><th>{{post.fields.venue}}</th></tr>
+					<tr v-if="post.fields.role"><th>my role</th><th>{{post.fields.role}}</th></tr>
 				</table>
 				<img class="thimbnail" :src="post.fields.thumbnail.fields.file.url" />
 				<RechtextRender :richtext-data="post.fields.body" />
