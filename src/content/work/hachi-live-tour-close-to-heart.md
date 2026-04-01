@@ -2,7 +2,7 @@
 title: "HACHI LIVE TOUR 「Close to heart」"
 description: "Technical Director — Spotify O-EAST/ Clapper Studio/Z-aN"
 date: "2023-10-09"
-thumbnail: "/images/hachi-live-tour-close-to-heart.png"
+thumbnail: "/images/hachi-live-tour-close-to-heart.webp"
 role: "Technical Director"
 venue: "Spotify O-EAST/ Clapper Studio/Z-aN"
 tags: ["Unreal Engine", "TouchDesigner"]

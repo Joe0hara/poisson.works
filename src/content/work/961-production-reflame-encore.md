@@ -2,7 +2,7 @@
 title: "961 PRODUCTION presents『Re:FLAME』追加公演"
 description: "Technical Director — FENICE SACAY Main HALL"
 date: "2025-02-01"
-thumbnail: "/images/961-production-reflame-encore.jpg"
+thumbnail: "/images/961-production-reflame-encore.webp"
 role: "Technical Director"
 venue: "FENICE SACAY Main HALL (堺)"
 tags: ["Unreal Engine"]

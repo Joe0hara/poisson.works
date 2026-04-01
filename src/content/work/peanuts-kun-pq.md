@@ -2,7 +2,7 @@
 title: "ピーナッツくん バーチャルライブ「PQ」"
 description: "Technical Director — Hulu PPV / 全国70館ライブビューイング"
 date: "2025-11-23"
-thumbnail: "/images/peanuts-kun-pq.jpg"
+thumbnail: "/images/peanuts-kun-pq.webp"
 role: "Technical Director"
 venue: "Hulu PPV / 全国70館ライブビューイング"
 tags: ["Unreal Engine"]

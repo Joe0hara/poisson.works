@@ -2,7 +2,7 @@
 title: "TouchDesigner & Arduino for Beginners"
 description: ""
 date: "2018-04-01"
-thumbnail: "/images/touchdesigner-and-arduino-for-beginners.jpg"
+thumbnail: "/images/touchdesigner-and-arduino-for-beginners.webp"
 tags: ["TouchDesigner"]
 ---
 

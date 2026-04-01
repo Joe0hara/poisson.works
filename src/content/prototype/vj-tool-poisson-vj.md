@@ -2,7 +2,7 @@
 title: "VJ Tool (poisson-vj)"
 description: ""
 date: ""
-thumbnail: "/images/vj-tool-poisson-vj.png"
+thumbnail: "/images/vj-tool-poisson-vj.webp"
 tags: ["TouchDesigner", "Python"]
 ---
 

@@ -2,7 +2,7 @@
 title: "TOMMY HILFIGER PRESENTS TOKYO ICONS 2018"
 description: "Tokyo Prince Hotel"
 date: "2018-10-08"
-thumbnail: "/images/tommy-hilfiger-presents-tokyo-icons-2018.jpg"
+thumbnail: "/images/tommy-hilfiger-presents-tokyo-icons-2018.webp"
 venue: "Tokyo Prince Hotel"
 ---
 

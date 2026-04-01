@@ -2,7 +2,7 @@
 title: "FashiComm"
 description: "SHIBUYA STREAM"
 date: "2021-11-26"
-thumbnail: "/images/fashicomm.jpg"
+thumbnail: "/images/fashicomm.webp"
 venue: "SHIBUYA STREAM"
 ---
 

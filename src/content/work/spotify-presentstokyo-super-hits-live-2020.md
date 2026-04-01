@@ -2,7 +2,7 @@
 title: "Spotify presentsTOKYO SUPER HITS LIVE 2020"
 description: "Live stream"
 date: "2020-11-26"
-thumbnail: "/images/spotify-presentstokyo-super-hits-live-2020.jpg"
+thumbnail: "/images/spotify-presentstokyo-super-hits-live-2020.webp"
 venue: "Live stream"
 ---
 

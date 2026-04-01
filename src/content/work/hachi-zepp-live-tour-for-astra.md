@@ -2,7 +2,7 @@
 title: "HACHI Zepp Live Tour 2024 \"for ASTRA.\""
 description: "Technical Director — Zepp Shinjuku / Zepp New Taipei"
 date: "2024-12-14"
-thumbnail: "/images/hachi-for-astra-taipei.jpg"
+thumbnail: "/images/hachi-for-astra-taipei.webp"
 role: "Technical Director"
 venue: "Zepp Shinjuku (東京) / Zepp New Taipei (台北)"
 tags: ["Unreal Engine"]

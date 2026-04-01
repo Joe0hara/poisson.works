@@ -2,7 +2,7 @@
 title: "NANASHI Sing up vol.1-Sparkle-【ななしいんくミュージック】"
 description: "Technical Director — YouTube"
 date: "2023-05-03"
-thumbnail: "/images/774-sing-up-vol-1-sparkle.jpg"
+thumbnail: "/images/774-sing-up-vol-1-sparkle.webp"
 role: "Technical Director"
 venue: "YouTube"
 tags: ["Unreal Engine", "TouchDesigner"]

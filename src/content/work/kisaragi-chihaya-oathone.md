@@ -2,7 +2,7 @@
 title: "如月千早 武道館単独公演「OathONE」"
 description: "Technical Director — 日本武道館"
 date: "2026-01-24"
-thumbnail: "/images/kisaragi-chihaya-oathone.jpg"
+thumbnail: "/images/kisaragi-chihaya-oathone.webp"
 role: "Technical Director"
 venue: "日本武道館"
 tags: ["Unreal Engine"]

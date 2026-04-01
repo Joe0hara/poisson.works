@@ -2,7 +2,7 @@
 title: "Serial experiments huez"
 description: "PIA LIVE STREAM"
 date: "2021-10-30"
-thumbnail: "/images/serial-experiments-huez.jpg"
+thumbnail: "/images/serial-experiments-huez.webp"
 venue: "PIA LIVE STREAM"
 ---
 

@@ -2,7 +2,7 @@
 title: "THE IDOLM@STER M@STER EXPO LIVE SHOWCASE"
 description: "Technical Director — 幕張メッセ"
 date: "2024-12-14"
-thumbnail: "/images/the-idolm-ster-m-ster-expo-live-showcase.jpg"
+thumbnail: "/images/the-idolm-ster-m-ster-expo-live-showcase.webp"
 role: "Technical Director"
 venue: "幕張メッセ"
 tags: ["Unreal Engine", "TouchDesigner"]

@@ -2,7 +2,7 @@
 title: "glo NEX STAGE presents THE XR LIVE"
 description: "Instagram Live"
 date: "2022-01-22"
-thumbnail: "/images/glo-nex-stage-presents-the-xr-live.png"
+thumbnail: "/images/glo-nex-stage-presents-the-xr-live.webp"
 venue: "Instagram Live"
 ---
 

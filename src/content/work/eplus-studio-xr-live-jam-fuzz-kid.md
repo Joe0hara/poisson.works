@@ -2,7 +2,7 @@
 title: "eplus STUDIO XR Live (Jam Fuzz Kid)"
 description: "stream+ (eplus STUDIO)"
 date: "2021-12-21"
-thumbnail: "/images/eplus-studio-xr-live-jam-fuzz-kid.jpg"
+thumbnail: "/images/eplus-studio-xr-live-jam-fuzz-kid.webp"
 venue: "stream+ (eplus STUDIO)"
 tags: ["TouchDesigner", "Unreal Engine"]
 ---

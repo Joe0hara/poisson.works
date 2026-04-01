@@ -2,7 +2,7 @@
 title: "[XR Live vol.3] ReVers3:x CHEHON / 呂布カルマ / CHICO CARLITO| リバースクロス "
 description: "XR Advisor — Youtube"
 date: "2022-09-29"
-thumbnail: "/images/xr-live-vol-3-revers3-x.jpg"
+thumbnail: "/images/xr-live-vol-3-revers3-x.webp"
 role: "XR Advisor"
 venue: "Youtube"
 tags: ["Unreal Engine", "TouchDesigner"]

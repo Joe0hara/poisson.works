@@ -2,7 +2,7 @@
 title: "Orizuru Room"
 description: "Manazuru Jack Installation"
 date: "2018-05-04"
-thumbnail: "/images/orizuru-room.jpg"
+thumbnail: "/images/orizuru-room.webp"
 venue: "Manazuru Jack Installation"
 ---
 

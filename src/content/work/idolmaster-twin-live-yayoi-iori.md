@@ -2,7 +2,7 @@
 title: "高槻やよい・水瀬伊織 twin live「いつまでもなかよし！」"
 description: "Technical Director — 森のホール21"
 date: "2025-10-18"
-thumbnail: "/images/idolmaster-twin-live-yayoi-iori.jpg"
+thumbnail: "/images/idolmaster-twin-live-yayoi-iori.webp"
 role: "Technical Director"
 venue: "森のホール21 (松戸市文化会館)"
 tags: ["Unreal Engine"]

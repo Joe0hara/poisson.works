@@ -2,7 +2,7 @@
 title: "TDSW Vol.048 Journey to Mastering CHOPs"
 description: "Youtube Live"
 date: "2021-10-10"
-thumbnail: "/images/tdsw-vol-048.png"
+thumbnail: "/images/tdsw-vol-048.webp"
 venue: "Youtube Live"
 ---
 

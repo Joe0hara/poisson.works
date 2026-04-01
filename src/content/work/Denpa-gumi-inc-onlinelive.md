@@ -2,7 +2,7 @@
 title: "でんぱ組.inc オンラインライブ"
 description: "Onlive Live"
 date: "2020-05-16"
-thumbnail: "/images/Denpa-gumi-inc-onlinelive.jpg"
+thumbnail: "/images/Denpa-gumi-inc-onlinelive.webp"
 venue: "Onlive Live"
 ---
 

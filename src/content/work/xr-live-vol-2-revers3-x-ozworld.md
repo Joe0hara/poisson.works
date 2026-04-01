@@ -2,7 +2,7 @@
 title: "[XR Live vol.2] ReVers3:x OZworld | リバースクロス "
 description: "Technical Director — Youtube"
 date: "2022-05-29"
-thumbnail: "/images/xr-live-vol-2-revers3-x-ozworld.jpg"
+thumbnail: "/images/xr-live-vol-2-revers3-x-ozworld.webp"
 role: "Technical Director"
 venue: "Youtube"
 tags: ["Unreal Engine", "TouchDesigner"]

@@ -2,7 +2,7 @@
 title: "TouchDesigner でのドラッグ&ドロップについて"
 description: ""
 date: "2019-09-21"
-thumbnail: "/images/touchdesigner-drag-and-drop.jpg"
+thumbnail: "/images/touchdesigner-drag-and-drop.webp"
 tags: ["TouchDesigner", "Python"]
 ---
 

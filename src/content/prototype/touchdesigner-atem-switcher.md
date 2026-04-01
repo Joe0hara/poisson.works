@@ -2,7 +2,7 @@
 title: "TouchDesigner ATEM Switcher"
 description: ""
 date: ""
-thumbnail: "/images/touchdesigner-atem-switcher.png"
+thumbnail: "/images/touchdesigner-atem-switcher.webp"
 tags: ["TouchDesigner", "Python"]
 ---
 

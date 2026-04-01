@@ -2,7 +2,7 @@
 title: "Kizuna AI Virtual Fireworks Concert"
 description: "Oculus Venues"
 date: "2021-09-25"
-thumbnail: "/images/kizuna-ai-virtual-fireworks-concert.png"
+thumbnail: "/images/kizuna-ai-virtual-fireworks-concert.webp"
 venue: "Oculus Venues"
 ---
 

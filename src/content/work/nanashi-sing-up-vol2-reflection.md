@@ -2,7 +2,7 @@
 title: "NANASHI Sing up Vol.2 -Reflection-"
 description: "Technical Director — YouTube無料配信"
 date: "2025-05-25"
-thumbnail: "/images/nanashi-sing-up-vol2.jpg"
+thumbnail: "/images/nanashi-sing-up-vol2.webp"
 role: "Technical Director"
 venue: "YouTube (無料配信)"
 tags: ["Unreal Engine"]

@@ -2,7 +2,7 @@
 title: "Kizuna AI Virtual US Tour"
 description: "MOMENT HOUSE(オンライン) "
 date: "2021-05-25"
-thumbnail: "/images/kizuna-ai-virtual-us-tour.jpeg"
+thumbnail: "/images/kizuna-ai-virtual-us-tour.webp"
 venue: "MOMENT HOUSE(オンライン) "
 ---
 

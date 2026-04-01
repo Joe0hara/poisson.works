@@ -2,7 +2,7 @@
 title: "ピーナッツくん × Moment Tokyo XR LIVE #ONAKAnoNAKA"
 description: "Youtube Live"
 date: "2022-02-20"
-thumbnail: "/images/moment-tokyo-xr-live-onakanonaka.jpg"
+thumbnail: "/images/moment-tokyo-xr-live-onakanonaka.webp"
 venue: "Youtube Live"
 tags: ["TouchDesigner", "Unreal Engine"]
 ---

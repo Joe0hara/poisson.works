@@ -2,7 +2,7 @@
 title: "#killremote 2022 Spring collection #レミング"
 description: "XR Engineer — "
 date: "2022-03-15"
-thumbnail: "/images/killremote-2022-spring-collection.jpg"
+thumbnail: "/images/killremote-2022-spring-collection.webp"
 role: "XR Engineer"
 tags: ["TouchDesigner"]
 ---

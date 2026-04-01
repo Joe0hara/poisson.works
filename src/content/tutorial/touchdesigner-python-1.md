@@ -2,7 +2,7 @@
 title: "TouchDesigner で Python を使ってみよう！(１)"
 description: ""
 date: "2020-12-01"
-thumbnail: "/images/touchdesigner-python-1.jpg"
+thumbnail: "/images/touchdesigner-python-1.webp"
 tags: ["TouchDesigner", "Python"]
 ---
 

@@ -2,7 +2,7 @@
 title: "写真展「白昼夢」"
 description: "渋谷  Room_412"
 date: "2018-11-16"
-thumbnail: "/images/hakuchuumu.jpg"
+thumbnail: "/images/hakuchuumu.webp"
 venue: "渋谷  Room_412"
 ---
 

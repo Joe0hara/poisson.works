@@ -2,7 +2,7 @@
 title: "キタニタツヤ 配信ライブ”Hug myself (inside)”"
 description: "SHIBUYA CLUB QUATTRO（渋谷クラブクアトロ）"
 date: "2020-06-26"
-thumbnail: "/images/hug-myself-inside.jpg"
+thumbnail: "/images/hug-myself-inside.webp"
 venue: "SHIBUYA CLUB QUATTRO（渋谷クラブクアトロ）"
 ---
 

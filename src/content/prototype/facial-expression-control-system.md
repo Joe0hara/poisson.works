@@ -2,7 +2,7 @@
 title: "Facial Expression Control System"
 description: ""
 date: "2023-05-03"
-thumbnail: "/images/facial-expression-control-system.png"
+thumbnail: "/images/facial-expression-control-system.webp"
 tags: ["TouchDesigner", "Python"]
 ---
 

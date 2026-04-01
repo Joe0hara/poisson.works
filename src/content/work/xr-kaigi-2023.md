@@ -2,7 +2,7 @@
 title: "XR Kaigi 2023「バーチャルライブの制作ワークフロー」"
 description: "登壇 — XR Kaigi 2023"
 date: "2023-12-19"
-thumbnail: "/images/xr-kaigi-2023.jpg"
+thumbnail: "/images/xr-kaigi-2023.webp"
 role: "Speaker"
 venue: "XR Kaigi 2023 (オンラインセッション)"
 ---

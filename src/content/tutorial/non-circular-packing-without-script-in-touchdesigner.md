@@ -2,7 +2,7 @@
 title: "Non-Circular packing without script in TouchDesigner"
 description: ""
 date: "2021-06-26"
-thumbnail: "/images/non-circular-packing-without-script-in-touchdesigner.jpeg"
+thumbnail: "/images/non-circular-packing-without-script-in-touchdesigner.webp"
 tags: ["TouchDesigner", "Python"]
 ---
 

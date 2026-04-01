@@ -2,7 +2,7 @@
 title: "TouchDesigner Vol.054 Journey to Mastering DATs"
 description: "Youtube Live"
 date: "2022-02-27"
-thumbnail: "/images/touchdesigner-vol-054-journey-to-mastering-dats.png"
+thumbnail: "/images/touchdesigner-vol-054-journey-to-mastering-dats.webp"
 venue: "Youtube Live"
 tags: ["Python", "TouchDesigner"]
 ---

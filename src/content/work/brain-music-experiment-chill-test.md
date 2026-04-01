@@ -2,7 +2,7 @@
 title: "Brain Music Experiment \"Chill Test\""
 description: "Engineer — SUPER DOMMUNE"
 date: "2021-03-31"
-thumbnail: "/images/brain-music-experiment-chill-test.jpg"
+thumbnail: "/images/brain-music-experiment-chill-test.webp"
 role: "Engineer"
 venue: "SUPER DOMMUNE"
 tags: ["TouchDesigner"]
