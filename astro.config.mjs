@@ -5,4 +5,11 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
   site: 'https://poisson.works',
   output: 'static',
+  prefetch: {
+    prefetchAll: true,
+    defaultStrategy: 'viewport',
+  },
+  image: {
+    domains: [],
+  },
 });
