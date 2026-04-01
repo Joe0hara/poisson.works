@@ -1,0 +1,131 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  date: string;
+  role?: string;
+  venue?: string;
+  thumbnail?: string;
+  category: string;
+}
+
+const { title, description, date, role, venue, thumbnail, category } = Astro.props;
+---
+
+<BaseLayout title={title} description={description}>
+  <article>
+    <a href={`/${category}`} class="back">&larr; Back</a>
+
+    <h1>{title}</h1>
+
+    <dl class="meta">
+      {date && <div><dt>Date</dt><dd>{date}</dd></div>}
+      {venue && <div><dt>Venue</dt><dd>{venue}</dd></div>}
+      {role && <div><dt>Role</dt><dd>{role}</dd></div>}
+    </dl>
+
+    {thumbnail && <img src={thumbnail} alt="" class="hero-img" />}
+
+    <div class="prose">
+      <slot />
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  article {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .back {
+    display: inline-block;
+    font-size: 0.8rem;
+    color: var(--color-muted);
+    margin-bottom: 1.5rem;
+    transition: color 0.15s;
+  }
+
+  .back:hover {
+    color: var(--color-text);
+  }
+
+  .hero-img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+  }
+
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem 1.5rem;
+    font-size: 0.8rem;
+    color: var(--color-muted);
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .meta div {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  dt { font-weight: 500; }
+  dd { color: var(--color-text); }
+
+  .prose :global(p) { margin-bottom: 1.2em; }
+
+  .prose :global(h2) {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 2em 0 0.6em;
+  }
+
+  .prose :global(h3) {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 1.5em 0 0.5em;
+  }
+
+  .prose :global(ul),
+  .prose :global(ol) {
+    margin-bottom: 1.2em;
+    padding-left: 1.4em;
+  }
+
+  .prose :global(li) { margin-bottom: 0.2em; }
+
+  .prose :global(img) {
+    border-radius: 6px;
+    margin: 1.5em 0;
+  }
+
+  .prose :global(blockquote) {
+    border-left: 3px solid var(--color-border);
+    padding-left: 1em;
+    color: var(--color-muted);
+    margin: 1.5em 0;
+  }
+
+  .prose :global(a) {
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-color: var(--color-border);
+  }
+
+  .prose :global(a:hover) {
+    text-decoration-color: #fff;
+  }
+</style>

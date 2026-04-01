@@ -1,0 +1,80 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Card from '../components/Card.astro';
+import CardGrid from '../components/CardGrid.astro';
+import { getCollection } from 'astro:content';
+
+const allWork = (await getCollection('work'))
+  .filter(p => !p.data.draft)
+  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
+  .slice(0, 4);
+
+const allTools = (await getCollection('tools'))
+  .filter(p => !p.data.draft)
+  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
+  .slice(0, 3);
+
+const allTutorial = (await getCollection('tutorial'))
+  .filter(p => !p.data.draft)
+  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
+  .slice(0, 3);
+
+const allPrototype = (await getCollection('prototype'))
+  .filter(p => !p.data.draft)
+  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
+  .slice(0, 3);
+---
+
+<BaseLayout>
+  {allWork.length > 0 && (
+    <CardGrid title="Work" href="/work">
+      {allWork.map(post => (
+        <Card
+          title={post.data.title}
+          href={`/work/${post.id}`}
+          date={post.data.date}
+          thumbnail={post.data.thumbnail}
+        />
+      ))}
+    </CardGrid>
+  )}
+
+  {allTools.length > 0 && (
+    <CardGrid title="Tools" href="/tools">
+      {allTools.map(post => (
+        <Card
+          title={post.data.title}
+          href={`/tools/${post.id}`}
+          date={post.data.date}
+          thumbnail={post.data.thumbnail}
+        />
+      ))}
+    </CardGrid>
+  )}
+
+  {allTutorial.length > 0 && (
+    <CardGrid title="Tutorial" href="/tutorial">
+      {allTutorial.map(post => (
+        <Card
+          title={post.data.title}
+          href={`/tutorial/${post.id}`}
+          date={post.data.date}
+          thumbnail={post.data.thumbnail}
+        />
+      ))}
+    </CardGrid>
+  )}
+
+  {allPrototype.length > 0 && (
+    <CardGrid title="Prototype" href="/prototype">
+      {allPrototype.map(post => (
+        <Card
+          title={post.data.title}
+          href={`/prototype/${post.id}`}
+          date={post.data.date}
+          thumbnail={post.data.thumbnail}
+        />
+      ))}
+    </CardGrid>
+  )}
+</BaseLayout>

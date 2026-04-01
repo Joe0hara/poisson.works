@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Card from '../../components/Card.astro';
+import CardGrid from '../../components/CardGrid.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('prototype'))
+  .filter(p => !p.data.draft)
+  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+---
+
+<BaseLayout title="Prototype">
+  <h1 class="page-title">Prototype</h1>
+  <CardGrid columns={2}>
+    {posts.map(post => (
+      <Card
+        title={post.data.title}
+        href={`/prototype/${post.id}`}
+        date={post.data.date}
+        thumbnail={post.data.thumbnail}
+      />
+    ))}
+  </CardGrid>
+</BaseLayout>
+
+<style>
+  .page-title {
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+</style>
