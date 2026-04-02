@@ -2,7 +2,6 @@
 title: "961 PRODUCTION「Re:FLAME」"
 description: "Technical Director — ロームシアター京都"
 date: "2024-08-25"
-thumbnail: "/images/imas-reflame.webp"
 role: "Technical Director"
 venue: "ロームシアター京都 メインホール"
 ---
