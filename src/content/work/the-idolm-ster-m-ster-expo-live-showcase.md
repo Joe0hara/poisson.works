@@ -2,7 +2,6 @@
 title: "THE IDOLM@STER M@STER EXPO LIVE SHOWCASE"
 description: "Technical Director — 幕張メッセ"
 date: "2024-12-14"
-thumbnail: "/images/the-idolm-ster-m-ster-expo-live-showcase.webp"
 role: "Technical Director"
 venue: "幕張メッセ"
 tags: ["Unreal Engine", "TouchDesigner"]
@@ -26,3 +25,4 @@ RITSUKO AKIZUKI SOLO LIVE
 ![RTK M06 SMOKY THRILL ss04](https://images.ctfassets.net/jucn867nka4i/1XdTUxjNXoM6J0qMjB5IIL/9ddd1155bd9304bc45417ac8d5db12bd/RTK_M06_SMOKY_THRILL_ss04.png)
 
 ![RTK M09 MUSIC ss01](https://images.ctfassets.net/jucn867nka4i/4XgoNhzmu0ZcPbd6FBkeH4/c489bfadcb2b802e161c376bd001258c/RTK_M09_MUSIC_ss01.png)
+REZ&から参加。

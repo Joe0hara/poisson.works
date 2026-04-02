@@ -1,0 +1,211 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="About" description="Joe Ohara — Technical Director / Interactive Engineer">
+  <div class="about">
+    <div class="profile-header">
+      <img src="/images/profile.webp" alt="Joe Ohara" class="profile-img" />
+      <div>
+        <h1>Joe Ohara <span class="name-jp">小原 丈</span></h1>
+        <p class="role">Technical Director / Interactive Engineer</p>
+      </div>
+    </div>
+
+    <section class="bio">
+      <p>1997年生まれ 神奈川県出身<br />フリーランス</p>
+    </section>
+
+    <section>
+      <h2>Field</h2>
+      <ul>
+        <li>センシングエンジニア</li>
+        <li>XR / AR エンジニア</li>
+        <li>テクニカルアーティスト</li>
+        <li>Interactive Contents Engineering</li>
+        <li>Sensing / Human Computer Interaction</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Affiliation</h2>
+      <ul class="timeline">
+        <li><a href="https://rez-and.com" target="_blank" rel="noopener">REZ&</a> <span class="period">2023 - now</span></li>
+        <li><a href="http://module.team/" target="_blank" rel="noopener">Module</a> <span class="period">2020 - now</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <ul class="timeline">
+        <li>
+          Université Jean Monnet Saint-Étienne, France
+          <span class="period">2019.4 - 2019.7 (Internship)</span>
+          <span class="detail">Research: Semantic Web, UX/UI</span>
+        </li>
+        <li>
+          青山学院大学 理工学部 情報テクノロジー学科
+          <span class="period">2015.4 - 2019.3</span>
+          <span class="detail">Research: Interaction</span>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Skill / Tool</h2>
+      <div class="skill-grid">
+        <div>
+          <h3>Software</h3>
+          <ul>
+            <li>TouchDesigner</li>
+            <li>Unreal Engine</li>
+            <li>Chataigne</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Hardware / Sensor</h3>
+          <ul>
+            <li>Arduino / Raspberry Pi</li>
+            <li>Kinect / RealSense</li>
+            <li>HTC Vive / Anti Latency</li>
+            <li>測域センサー / LiDAR</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Languages</h3>
+          <ul>
+            <li>Python</li>
+            <li>C / C++</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Links</h2>
+      <ul class="links">
+        <li><a href="https://x.com/Joe0hara" target="_blank" rel="noopener">X (Twitter)</a></li>
+        <li><a href="https://github.com/Joe0hara" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://note.com/joe0hara" target="_blank" rel="noopener">note</a></li>
+        <li><a href="https://joe0hara.gumroad.com" target="_blank" rel="noopener">Gumroad</a></li>
+      </ul>
+    </section>
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>お仕事のご相談は <a href="https://x.com/Joe0hara" target="_blank" rel="noopener">X (Twitter)</a> の DM よりお気軽にどうぞ。</p>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .about {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .profile-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .profile-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  .name-jp {
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: var(--color-muted);
+  }
+
+  .role {
+    color: var(--color-muted);
+    font-size: 0.85rem;
+    margin-top: 0.15rem;
+  }
+
+  .bio {
+    margin-bottom: 2rem;
+  }
+
+  section {
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color-muted);
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.03em;
+  }
+
+  h3 {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--color-text);
+    margin-bottom: 0.3rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    font-size: 0.88rem;
+    padding: 0.15rem 0;
+  }
+
+  .timeline li {
+    padding: 0.3rem 0;
+  }
+
+  .period {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--color-muted);
+  }
+
+  .detail {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--color-muted);
+  }
+
+  .skill-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  @media (max-width: 520px) {
+    .skill-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .links a, .contact a {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-color: var(--color-border);
+    transition: text-decoration-color 0.15s;
+  }
+
+  .links a:hover, .contact a:hover {
+    text-decoration-color: #fff;
+  }
+</style>
