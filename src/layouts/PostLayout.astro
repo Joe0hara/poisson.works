@@ -1,5 +1,6 @@
 ---
 import BaseLayout from './BaseLayout.astro';
+import LinkCard from '../components/LinkCard.astro';
 
 interface Props {
   title: string;
@@ -9,9 +10,11 @@ interface Props {
   venue?: string;
   thumbnail?: string;
   category: string;
+  officialUrl?: string;
+  ogImage?: string;
 }
 
-const { title, description, date, role, venue, thumbnail, category } = Astro.props;
+const { title, description, date, role, venue, thumbnail, category, officialUrl, ogImage } = Astro.props;
 ---
 
 <BaseLayout title={title} description={description}>
@@ -27,6 +30,8 @@ const { title, description, date, role, venue, thumbnail, category } = Astro.pro
     </dl>
 
     {thumbnail && <img src={thumbnail} alt="" class="hero-img" />}
+
+    {officialUrl && <LinkCard url={officialUrl} ogImage={ogImage} title="公式サイト" />}
 
     <div class="prose">
       <slot />

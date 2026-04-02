@@ -10,6 +10,8 @@ const work = defineCollection({
     thumbnail: z.string().optional(),
     role: z.string().optional(),
     venue: z.string().optional(),
+    officialUrl: z.string().optional(),
+    ogImage: z.string().optional(),
     draft: z.boolean().default(false),
   }),
 });

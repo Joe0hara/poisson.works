@@ -5,8 +5,8 @@ date: "2024-12-14"
 role: "Technical Director"
 venue: "幕張メッセ"
 tags: ["Unreal Engine", "TouchDesigner"]
+officialUrl: "https://idolmaster-official.jp/live_event/master_expo/"
+ogImage: "https://idolmaster-official.jp/live_event/master_expo/ogp.png"
 ---
 
 REZ&から参加。
-
-[公式サイト](https://idolmaster-official.jp/live_event/master_expo/)
