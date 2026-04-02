@@ -2,6 +2,7 @@
 title: "高槻やよい・水瀬伊織 twin live「いつまでもなかよし！」"
 description: "Technical Director — 森のホール21"
 date: "2025-10-18"
+thumbnail: "/images/imas-yayoi-iori.webp"
 role: "Technical Director"
 venue: "森のホール21 (松戸市文化会館)"
 tags: ["Unreal Engine"]
@@ -14,3 +15,5 @@ tags: ["Unreal Engine"]
 新曲「Flower Knows」を含むパフォーマンスが披露され、LIVE Blu-rayの発売も決定。
 
 REZ&から参加。
+
+[公式サイト](https://idolmaster-official.jp/live_event/twinlive_nakayoshi/)

@@ -2,6 +2,7 @@
 title: "961 PRODUCTION presents『Re:FLAME』追加公演"
 description: "Technical Director — FENICE SACAY Main HALL"
 date: "2025-02-01"
+thumbnail: "/images/imas-reflame-encore.webp"
 role: "Technical Director"
 venue: "FENICE SACAY Main HALL (堺)"
 tags: ["Unreal Engine"]
@@ -14,3 +15,5 @@ tags: ["Unreal Engine"]
 星井美希、四条貴音、我那覇響によるプロジェクトフェアリーのステージに加え、DUSKパートでは奥空心白・亜夜がゲスト出演。会場限定CDには新曲「REALIZE!!!」を含む全12曲を収録。
 
 REZ&から参加。
+
+[公式サイト](https://idolmaster-official.jp/live_event/re/)

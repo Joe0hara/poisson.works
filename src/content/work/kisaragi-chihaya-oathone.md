@@ -2,6 +2,7 @@
 title: "如月千早 武道館単独公演「OathONE」"
 description: "Technical Director — 日本武道館"
 date: "2026-01-24"
+thumbnail: "/images/imas-oathone.webp"
 role: "Technical Director"
 venue: "日本武道館"
 tags: ["Unreal Engine"]
@@ -14,3 +15,5 @@ tags: ["Unreal Engine"]
 xRライブストリーミングによる配信も実施された。
 
 REZ&から参加。
+
+[公式サイト](https://idolmaster-official.jp/live_event/oath_one/)
