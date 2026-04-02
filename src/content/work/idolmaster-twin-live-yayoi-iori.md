@@ -6,6 +6,7 @@ role: "Technical Director"
 venue: "森のホール21 (松戸市文化会館)"
 tags: ["Unreal Engine"]
 officialUrl: "https://idolmaster-official.jp/live_event/twinlive_nakayoshi/"
+themeColor: "#f39939, #fd99e1"
 ogImage: "https://idolmaster-official.jp/live_event/twinlive_nakayoshi/ogp.png"
 ---
 
@@ -15,4 +16,8 @@ ogImage: "https://idolmaster-official.jp/live_event/twinlive_nakayoshi/ogp.png"
 
 新曲「Flower Knows」を含むパフォーマンスが披露され、LIVE Blu-rayの発売も決定。
 
-REZ&から参加。
+[https://www.youtube.com/watch?v=f0c9GuNAua0](https://www.youtube.com/watch?v=f0c9GuNAua0)
+
+[https://www.youtube.com/watch?v=LQximhJzzik](https://www.youtube.com/watch?v=LQximhJzzik)
+
+[https://www.youtube.com/watch?v=bTrZPxzTV1s](https://www.youtube.com/watch?v=bTrZPxzTV1s)

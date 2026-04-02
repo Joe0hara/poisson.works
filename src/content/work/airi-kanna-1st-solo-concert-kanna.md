@@ -8,4 +8,6 @@ venue: "WATCHA / Beyond Live / ロッテシネマ光複"
 tags: ["Unreal Engine", "TouchDesigner"]
 ---
 
-Airi Kanna 1st solo Concert [ KANNA ]にてテクニカルディレクターを担当させていただきました。
+Airi Kanna 1st solo Concert [ KANNA ]にてREZ&でテクニカルディレクターを担当。初の海外VTuberライブ制作。
+
+[Beyond LIVE](https://beyondlive.com/contents/342)

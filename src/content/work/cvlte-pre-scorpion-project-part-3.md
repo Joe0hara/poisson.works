@@ -8,4 +8,6 @@ venue: "Zepp Shinjuku"
 tags: ["TouchDesigner"]
 ---
 
+REZ&にてエンジニアを担当。
+
 [https://www.sonymusic.co.jp/artist/CVLTE/info/554846](https://www.sonymusic.co.jp/artist/CVLTE/info/554846)

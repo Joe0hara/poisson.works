@@ -17,6 +17,6 @@ Programming:Joe Ohara
 wi fi web design:Yuki Soejima
 Stage support :VJyou 
 
-![TH2018 Tokyoicons 02](https://images.ctfassets.net/jucn867nka4i/6iPL54sYHde8WTGSnQUEcd/92007716169a11fb0454ae38e8ef5073/TH2018_Tokyoicons_02.jpg)
+![TH2018 Tokyoicons 02](/images/content/TH2018_Tokyoicons_02.webp)
 
-![TH2018 Tokyoicons 03](https://images.ctfassets.net/jucn867nka4i/2fmJwkrdZb3qEeVNOShWBM/a037ede884b0c6d9cfe909430152e296/TH2018_Tokyoicons_03.jpg)
+![TH2018 Tokyoicons 03](/images/content/TH2018_Tokyoicons_03.webp)

@@ -16,7 +16,7 @@ This time, I implemented non-circular packing with TouchDesigner without writing
 
 network
 
-![image](https://images.ctfassets.net/jucn867nka4i/42qxVCWMZvVWrDV9fMwbrm/a6d4d9f5332a27bc61755567cc223e5d/image.png)
+![image](/images/content/image.webp)
 
 ### What is Non-Circular Packing??
 
@@ -41,11 +41,11 @@ The purpose of this application is to determine the overlap of non-circular shap
 This time, I will randomly change the position, rotation, and size of the input image, and determine if it overlaps with the current layer being drawn.
 If not, the input image will be drawn on the drawing layer, and if it does, the random values will be changed to find a place where it can be drawn next without overlapping.
 
-![bg](https://images.ctfassets.net/jucn867nka4i/6E6yxf77NDdQiGrNw1QBf9/5edddee721bc9f931ffc8099280c6fc5/bg.png)
+![bg](/images/content/bg.webp)
 
 ### Input and resolution
 
-![image-1](https://images.ctfassets.net/jucn867nka4i/7zFqrvlelUStHws8Lmxyx9/97a63c9379ed584372eb691689379ed8/image-1.png)
+![image-1](/images/content/image-1.webp)
 
 First, prepare the empty ConstantTOP and the image you want to input at the resolution of the picture you want to create.
 If the input image overflows, use Over2 to adjust the size so that it fits into a square.
@@ -55,14 +55,14 @@ If the input image overflows, use Over2 to adjust the size so that it fits into 
 Next, we will create the position, rotation, and size values for drawing.
 First of all, the timelineCHOP retrieves the elapsed time since the program was started.
 
-![image-2](https://images.ctfassets.net/jucn867nka4i/jK9ejz180cx1tdFTO9lvx/e747f57270d5296254f82efbddab9cc5/image-2.png)
+![image-2](/images/content/image-2.webp)
 
 This will be the same value as <code>absTime.seconds</code>, which is often written in expressions
 
 Set the value to the random value Seed to create a random value that changes every frame.
 Each value will be between 0 and 1.
 
-![image-3](https://images.ctfassets.net/jucn867nka4i/c09rMz2kVHe5PPn0bMLAZ/5010173296724dfca98732b6dc048c59/image-3.png)
+![image-3](/images/content/image-3.webp)
 
 Then, adjust the position, rotation, and size values to the appropriate ranges.
 
@@ -77,21 +77,21 @@ Size : 0.25~0.75 (set size as you like)
 
 By using the generated random values in transformTOP, we can prepare an input image that is generated randomly every frame, and determine the next drawing candidate every frame.
 
-![image-4](https://images.ctfassets.net/jucn867nka4i/3T8lk84Qfi7OOnEKiaoqhX/9436dea8a3c47520534301c4a1d9e708/image-4.png)
+![image-4](/images/content/image-4.webp)
 
 ### Draw and update
 
-![image-5](https://images.ctfassets.net/jucn867nka4i/5EipQV7ESItgk4Ki8ZwCVh/c3ca9df70d42d20b6ed8b9846e189509/image-5.png)
+![image-5](/images/content/image-5.webp)
 
 For drawing, we will use a combination of FeedbackTOP and OverTOP, which are commonly used in TouchDesigner.
 
 The current drawing is held in FeedbackTOP, and when an image comes into switch1, it is combined in OverTOP, and the result is updated in FeedbackTOP. (Various tutorials are available on Youtube.)
 
-![process](https://images.ctfassets.net/jucn867nka4i/5gWqk2drRbgttbtoGuevTh/55546e99db0ae2d839b29c030b64914d/process.gif)
+![process](/images/content/process.gif)
 
 ### Overlap detection
 
-![image-6](https://images.ctfassets.net/jucn867nka4i/hJseZUsBUWSrOvKzvUURk/dc113a7b7f18013ba11b42a423aa80c0/image-6.png)
+![image-6](/images/content/image-6.webp)
 
 Finally, determine if the current drawing and the next one overlap.
 

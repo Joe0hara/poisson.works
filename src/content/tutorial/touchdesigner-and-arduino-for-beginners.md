@@ -24,19 +24,19 @@ tags: ["TouchDesigner"]
 - PC
 - Arduino (今回はArduino Unoを使用します)
 
-![arduino uno](https://images.ctfassets.net/jucn867nka4i/6lepSvPHAC0PARW9dWjapg/914f4cd731b70b073ae7902076207a8b/arduino_uno.jpg)
+![arduino uno](/images/content/arduino_uno.webp)
 
 - USBケーブル (ArduinoとPCを繋げる用)
 
-![usb cable](https://images.ctfassets.net/jucn867nka4i/2ohcSdAySZqarkJgwXL1xR/130b223c14fbd7ddfb49ae88ed99c1b1/usb_cable.jpg)
+![usb cable](/images/content/usb_cable.webp)
 
 - ブレッドボード(はんだ付けをしなくてもすむ！)
 
-![bread board](https://images.ctfassets.net/jucn867nka4i/7oRduu4ZPkg65wNHey0Mzn/ea1b9d1843d610600fda89daa03e355a/bread_board.png)
+![bread board](/images/content/bread_board.webp)
 
 - ジャンパワイヤ(Arduinoとブレッドボード等を接続します
 
-![jump wire](https://images.ctfassets.net/jucn867nka4i/1x2zKVab5I6TJ07eSCJ5bO/fa605512fe3993d98299fe3d422dd73e/jump_wire.jpg)
+![jump wire](/images/content/jump_wire.webp)
 
 - センサーなど諸々 (その都度説明します)
 
@@ -76,18 +76,18 @@ void loop() {  //ボードの電源が切れるまで繰り返し実行される
 
 ### Arduinoへプログラムの書き込む方法
 
-![serial port](https://images.ctfassets.net/jucn867nka4i/49avhlkKUegQa0wbqVkzbd/c8ae7f58e584aee9c3fec9bfc34063e1/serial_port.png)
+![serial port](/images/content/serial_port.webp)
 
 プログラムを書き、保存をしたら
 ツール-&gt;ボードを “Arduino/Genuino Uno” (使用しているボード)
 ツール-&gt;シリアルポートを 表示されているポートに合わせてください
 (WindowsだとCom3など、Macだと/dev/cu.usbmodem1421などのような表示です)
 
-![write](https://images.ctfassets.net/jucn867nka4i/3TvxJtlayApPgApkLPBcfK/0d1ba7cf225bf82342a1c42ea04bdbbc/write.png)
+![write](/images/content/write.webp)
 
 二つを設定したら、左上の矢印ボタンで書き込みができます
 
-![write finish](https://images.ctfassets.net/jucn867nka4i/2LnTlZMPNhJPIQFWuIL645/328df1db515e6e1cc995018f74bd0444/write_finish.png)
+![write finish](/images/content/write_finish.webp)
 
 以下の画像のように表示されたら書き込み完了です
 
@@ -111,11 +111,11 @@ void loop() {
     delay(1000);  //１秒待つ
 }</code>
 
-![serial print](https://images.ctfassets.net/jucn867nka4i/30vCRoG5E4EhFMZLZuORSL/f11adc9a13d408d4df47e202a1149855/serial_print.png)
+![serial print](/images/content/serial_print.webp)
 
 Arduino IDEのシリアルモニタから送信されたデータを確認
 
-![serial monitor](https://images.ctfassets.net/jucn867nka4i/7mH2u63dgUCDhMVjrBshMz/cafc935de6ab79b110bfe83091c66526/serial_monitor.png)
+![serial monitor](/images/content/serial_monitor.webp)
 
 改行がされない…
 Serial.print()ではデータのみを送信します
@@ -139,14 +139,14 @@ void loop() {
 
 シリアルモニタを見てみると
 
-![serial monitor n](https://images.ctfassets.net/jucn867nka4i/LxVRWQkTRubw6BBm6xGcK/a294512d09759cf9f25cc63cea620150/serial_monitor_n.png)
+![serial monitor n](/images/content/serial_monitor_n.webp)
 
 送信されたデータごとに改行がされています
 TouchDesignerでSerialを受信する時には、改行記号がデータの最後に付いていると扱いやすいです
 
 ### TouchDesignerでSerialを受信
 
-![TD serial DAT](https://images.ctfassets.net/jucn867nka4i/3UruvpOTNYJXN4v6cDshEv/d66629dfd28b2758e975ad63a68c9694/TD_serial_DAT.png)
+![TD serial DAT](/images/content/TD_serial_DAT.webp)
 
 TDSW_Arduino.toe-&gt;<code>/project1/serial_display</code>
 次はシリアルモニタではなくTouchDesigner側でSerialを受信してみましょう
@@ -156,7 +156,7 @@ Baud Rate をSerial.begin() で設定した値にします(今回は9600)
 
 その後ActiveをONにするとSerialDATに先程のシリアルモニタど同様の値が来ているのが確認できます
 
-![TD serial DAT 2](https://images.ctfassets.net/jucn867nka4i/2zAqZbcisVyJrUl8ThHF0A/3a212ff0e6f4276797ba8bdafe33c8c0/TD_serial_DAT_2.png)
+![TD serial DAT 2](/images/content/TD_serial_DAT_2.webp)
 
 ### 物理ボタンのOnOffをTouchにSerialに送信
 
@@ -168,7 +168,7 @@ TDSW_Arduino.toe-&gt;<code>/project1/button_switching</code>
 - タクトスイッチ
 - 抵抗(150Ω) (プルダウン抵抗として使用)
 
-![bread board sample1](https://images.ctfassets.net/jucn867nka4i/17Zt4MlUdO5IPS0BsDQzNq/4ab5cd2db9929341ef34ed46de602ae8/bread_board_sample1.png)
+![bread board sample1](/images/content/bread_board_sample1.webp)
 
 ボタンが押されてるかどうかを0/1でSerialで送信
 
@@ -187,9 +187,9 @@ void loop() {
     delay(100);
 }</code>
 
-![TD serial DAT par](https://images.ctfassets.net/jucn867nka4i/7i2zkOv2WadlP7vY4zoWzr/f83471a6b4fdcc89196ddd96207e8a30/TD_serial_DAT_par.png)
+![TD serial DAT par](/images/content/TD_serial_DAT_par.webp)
 
-![TD network](https://images.ctfassets.net/jucn867nka4i/4EtJztNjFY1hoggORp8Gur/cdc05490c4e936a33053ac8152763040/TD_network.png)
+![TD network](/images/content/TD_network.webp)
 
 押していない時0、押されている時に1を送るのでその値をTouchDesigner側で利用しましょう
 まず最新の値一つしか用いない為SerialDATのMaximum Linesを1にします
@@ -198,7 +198,7 @@ void loop() {
 - countCHOP-&gt;Limit : Loop Min/Max
 - countCHOP-&gt;Limit Maximum : １
 
-![TD DAT](https://images.ctfassets.net/jucn867nka4i/6xS5jRL8iWwI1bqnYWRfcm/7718c48d04feb0cf79ab084e583c4b57/TD_DAT.gif)
+![TD DAT](/images/content/TD_DAT.gif)
 
 そしてcountCHOPの値を画像を切り替えるSwitchTOPのindexに入れてあげると完成
 
@@ -264,7 +264,7 @@ void loop() {
     delay(100);
 }</code>
 
-![bread board acc](https://images.ctfassets.net/jucn867nka4i/3Bm20S0ChdZkvz3XLwTK1M/9dd94b6dde693b7eb300fa773a7e2fc1/bread_board_acc.jpg)
+![bread board acc](/images/content/bread_board_acc.webp)
 
 ### TouchのSliderからLEDの光の強さを制御
 
@@ -305,7 +305,7 @@ void loop() {
   }  
 }</code>
 
-![bread board led](https://images.ctfassets.net/jucn867nka4i/5TcV7ffYXbX4dPhzGB82Ds/901b61021373ca3c66f30928c8f0c62c/bread_board_led.png)
+![bread board led](/images/content/bread_board_led.webp)
 
 ## 最後に
 

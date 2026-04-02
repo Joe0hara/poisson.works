@@ -6,6 +6,7 @@ role: "Technical Director"
 venue: "日本武道館"
 tags: ["Unreal Engine"]
 officialUrl: "https://idolmaster-official.jp/live_event/oath_one/"
+themeColor: "#2743d2"
 ogImage: "https://idolmaster-official.jp/live_event/oath_one/ogp.png?v4"
 ---
 
@@ -15,4 +16,4 @@ ogImage: "https://idolmaster-official.jp/live_event/oath_one/ogp.png?v4"
 
 xRライブストリーミングによる配信も実施された。
 
-REZ&から参加。
+[https://www.youtube.com/watch?v=_27-27cmqzk](https://www.youtube.com/watch?v=_27-27cmqzk)

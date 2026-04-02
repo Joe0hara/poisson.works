@@ -12,6 +12,7 @@ const work = defineCollection({
     venue: z.string().optional(),
     officialUrl: z.string().optional(),
     ogImage: z.string().optional(),
+    themeColor: z.string().optional(),
     draft: z.boolean().default(false),
   }),
 });
@@ -46,6 +47,7 @@ const tools = defineCollection({
     date: z.string(),
     thumbnail: z.string().optional(),
     url: z.string().optional(),
+    ogImage: z.string().optional(),
     draft: z.boolean().default(false),
   }),
 });

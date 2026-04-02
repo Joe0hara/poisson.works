@@ -14,6 +14,6 @@ tags: ["TouchDesigner"]
 
 [https://www.youtube.com/watch?v=B1BSs1k4BcU](https://www.youtube.com/watch?v=B1BSs1k4BcU)
 
-![Brain Music Experiment 002](https://images.ctfassets.net/jucn867nka4i/1DPHmOu8U3CKMv7uyS7XGR/7762106f2a4acd952bcf082f2c2a50b2/192990264_222953469642979_890428932256659168_n.jpg)
+![Brain Music Experiment 002](/images/content/192990264_222953469642979_890428932256659168_n.webp)
 
-![Brain Music Experiment 003](https://images.ctfassets.net/jucn867nka4i/51sDUTVGBMKHaEforCQtck/638975739d69c254c1bab14123cd16ba/193035563_222953782976281_8881833438337838522_n.jpg)
+![Brain Music Experiment 003](/images/content/193035563_222953782976281_8881833438337838522_n.webp)

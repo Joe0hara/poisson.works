@@ -1,9 +1,10 @@
 ---
 title: "VJClipThumbGen"
 description: "HAP動画のサムネイルをFinderに自動生成するmacOSアプリ"
-date: "2025-01-01"
+date: "2026-03-25"
 thumbnail: "/images/vjclipthumbgen.webp"
 url: "https://joe0hara.gumroad.com/l/HAPThumbnailGen"
+ogImage: "https://public-files.gumroad.com/40weclcoapf69gv2szj6o883xjdb"
 ---
 
 HAP動画のサムネイルをFinderに自動生成するmacOSアプリ。

@@ -18,6 +18,7 @@ const posts = (await getCollection('work'))
         href={`/work/${post.id}`}
         date={post.data.date}
         thumbnail={post.data.thumbnail}
+        themeColor={post.data.themeColor}
       />
     ))}
   </CardGrid>

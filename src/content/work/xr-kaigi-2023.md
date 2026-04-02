@@ -8,3 +8,5 @@ venue: "XR Kaigi 2023 (オンラインセッション)"
 ---
 
 XR Kaigi 2023にて「バーチャルライブの制作ワークフロー」をテーマにオンラインセッションに登壇。
+
+[セッション詳細](https://www.xrkaigi.com/pages/session_detail?session_id=XRKG2023-S-051)

@@ -8,4 +8,6 @@ venue: "Streaming"
 tags: ["Unreal Engine", "TouchDesigner"]
 ---
 
+REZ&にてバーチャルライブのテクニカルディレクターを担当。
+
 [https://www.youtube.com/watch?v=ZhP9CA6MMbs](https://www.youtube.com/watch?v=ZhP9CA6MMbs)
