@@ -6,7 +6,7 @@ thumbnail: "/images/peanuts-kun-bloodbagbrainbomb.webp"
 role: "3D Technical Director"
 ---
 
-REZ&にて3Dパートのテクニカルディレクターを担当。
+3Dパートのテクニカルディレクターを担当。
 
 [iTONY ENTERTAINMENT](https://itony-live.co.jp/schedule/36726/)
 
