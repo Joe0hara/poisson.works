@@ -9,7 +9,7 @@ officialUrl: "https://idolmaster-official.jp/live_event/re/"
 ogImage: "https://idolmaster-official.jp/live_event/re/ogp.png?v2"
 ---
 
-アイドルマスターシリーズ 961プロダクションのxRライブ「Re:FLAME」追加公演にてテクニカルディレクターを担当。
+アイドルマスターシリーズ 961プロダクションのxRライブ「Re:FLAME」追加公演にてREZ&でテクニカルディレクターを担当。
 
 2024年8月の初演に続き、2025年2月1日に大阪・堺のFENICE SACAY Main HALLで開催。Re:FRAIN/DAWN（12:30開演）とRe:FLAME/DUSK（16:00開演）の2公演構成。
 

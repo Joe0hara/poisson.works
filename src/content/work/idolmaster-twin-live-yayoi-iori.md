@@ -9,7 +9,7 @@ officialUrl: "https://idolmaster-official.jp/live_event/twinlive_nakayoshi/"
 ogImage: "https://idolmaster-official.jp/live_event/twinlive_nakayoshi/ogp.png"
 ---
 
-アイドルマスター 765プロダクション所属の高槻やよい・水瀬伊織によるツインライブ「いつまでもなかよし！」にてテクニカルディレクターを担当。
+アイドルマスター 765プロダクション所属の高槻やよい・水瀬伊織によるツインライブ「いつまでもなかよし！」にてREZ&でテクニカルディレクターを担当。
 
 2025年10月18日〜19日の2日間、千葉県松戸市の森のホール21にて全3公演を開催。DAY1「えがおだね！」、DAY2「ひゃくねんさきも！」「きみとおはなし！」の構成。現地公演に加え、xRライブストリーミングによる配信も実施。
 
