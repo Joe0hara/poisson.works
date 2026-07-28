@@ -1,5 +1,6 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
+import { unified } from '@astrojs/markdown-remark';
 import rehypeYoutube from './src/plugins/rehype-youtube.mjs';
 import rehypeExternalLinks from 'rehype-external-links';
 
@@ -15,9 +16,11 @@ export default defineConfig({
     domains: [],
   },
   markdown: {
-    rehypePlugins: [
-      rehypeYoutube,
-      [rehypeExternalLinks, { target: '_blank', rel: ['noopener', 'noreferrer'] }],
-    ],
+    processor: unified({
+      rehypePlugins: [
+        rehypeYoutube,
+        [rehypeExternalLinks, { target: '_blank', rel: ['noopener', 'noreferrer'] }],
+      ],
+    }),
   },
 });
