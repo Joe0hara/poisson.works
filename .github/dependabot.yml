@@ -1,0 +1,19 @@
+version: 2
+updates:
+  # npm 依存の更新 PR を毎週まとめて作成する
+  # (セキュリティアラートへの修正 PR はこの設定に関係なく随時作成される)
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      minor-and-patch:
+        update-types:
+          - minor
+          - patch
+
+  # GitHub Actions (deploy.yml で使う actions/*) の更新
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly

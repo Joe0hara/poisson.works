@@ -4,7 +4,8 @@
 
 ## Stack
 
-- **Framework**: Astro 6 (static output)
+- **Framework**: Astro 7 (static output)
+- **Markdown**: rehype プラグインは `astro.config.mjs` の `markdown.processor`(`@astrojs/markdown-remark` の `unified()`)経由で設定
 - **Styling**: Vanilla CSS (CSS custom properties)
 - **Content**: Markdown files in `src/content/{work,tools,tutorial,prototype}/`
 - **Deploy**: GitHub Pages via GitHub Actions
