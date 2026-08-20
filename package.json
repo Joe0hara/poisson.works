@@ -1,5 +1,13 @@
 {
   "name": "poisson-works",
+  "description": "poisson.works — portfolio site of Joe Ohara, built with Astro",
+  "author": "Joe Ohara (https://poisson.works)",
+  "homepage": "https://poisson.works",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joe0hara/poisson.works.git"
+  },
+  "private": true,
   "type": "module",
   "version": "0.0.1",
   "engines": {
