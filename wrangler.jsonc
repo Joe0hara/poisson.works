@@ -1,0 +1,12 @@
+// Cloudflare Workers (static assets) の設定
+// ビルド済みの dist/ をそのまま静的配信する。Worker スクリプト (main) は不要
+{
+  "$schema": "https://unpkg.com/wrangler/config-schema.json",
+  "name": "poisson-works",
+  "compatibility_date": "2026-08-01",
+  "assets": {
+    "directory": "./dist",
+    // 存在しないパスでは dist/404.html を 404 ステータスで返す
+    "not_found_handling": "404-page"
+  }
+}
